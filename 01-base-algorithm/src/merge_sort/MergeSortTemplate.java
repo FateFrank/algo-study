@@ -2,9 +2,9 @@ package merge_sort;
 
 public class MergeSortTemplate {
 
-    int[] tmp;
+    int[] tmp = new int[1000010];
 
-    void merge_sort(int q[], int l, int r) {
+    void merge_sort(int[] q, int l, int r) {
         if (l >= r) return;
 
         int mid = l + r >> 1;
